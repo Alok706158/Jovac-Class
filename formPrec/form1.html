@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Registration Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Create Account</h1>
+            <p>Fill the details below to create your account</p>
+
+            <form id="registerForm">
+
+                <!-- First Name -->
+                <div class="input-group">
+                    <label for="firstName">First Name</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="Enter First Name">
+                    <small class="error"></small>
+                </div>
+
+                <!-- Last Name -->
+                <div class="input-group">
+                    <label for="lastName">Last Name</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Enter Last Name">
+                    <small class="error"></small>
+                </div>
+
+                <!-- Email -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter Email">
+                    <small class="error"></small>
+                </div>
+
+                <!-- Phone -->
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter Phone Number">
+                    <small class="error"></small>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input
+                        type="date"
+                        id="dob">
+                    <small class="error"></small>
+                </div>
+
+                <!-- Gender -->
+                <div class="input-group">
+
+                    <label>Gender</label>
+
+                    <div class="gender">
+
+                        <label>
+                            <input type="radio" name="gender" value="Male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Other">
+                            Other
+                        </label>
+
+                    </div>
+
+                    <small class="error"></small>
+
+                </div>
+
+                <!-- Password -->
+                <div class="input-group">
+
+                    <label for="password">Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter Password">
+
+                        <i class="fa-solid fa-eye togglePassword"></i>
+
+                    </div>
+
+                    <div class="strength">
+                        <div class="strength-bar"></div>
+                    </div>
+
+                    <small class="error"></small>
+
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="input-group">
+
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm Password">
+
+                        <i class="fa-solid fa-eye togglePassword"></i>
+
+                    </div>
+
+                    <small class="error"></small>
+
+                </div>
+
+                <!-- Terms -->
+                <div class="checkbox-group">
+
+                    <input
+                        type="checkbox"
+                        id="terms">
+
+                    <label for="terms">
+                        I agree to the Terms & Conditions
+                    </label>
+
+                </div>
+
+                <small class="error terms-error"></small>
+
+                <!-- Button -->
+                <button type="submit" id="registerBtn">
+                    Create Account
+                </button>
+
+                <!-- Login -->
+                <div class="login-link">
+
+                    Already have an account?
+
+                    <a href="#">
+                        Login
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
